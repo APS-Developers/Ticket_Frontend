@@ -1,0 +1,10 @@
+#aps_carousel .carousel-item img{
+    width:100% !important;
+    height:100% !important;
+    max-height:550px;
+    min-height:300px;
+}
+#aps_carousel .carousel-caption{
+    background:#fffA;
+    font-family: 'Playfair Display', serif;
+}
