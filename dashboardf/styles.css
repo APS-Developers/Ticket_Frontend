@@ -62,7 +62,7 @@
     margin-left: 12 px;
     top: 80px;
     width: 200px;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
     background: #299;
     overflow-x: hidden;
 }
