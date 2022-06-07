@@ -7,4 +7,5 @@
 #aps_carousel .carousel-caption{
     background:#fffA;
     font-family: 'Playfair Display', serif;
+    box-shadow: 3px 3px 5px 2px #000;
 }
