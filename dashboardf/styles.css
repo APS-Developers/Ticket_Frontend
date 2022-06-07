@@ -57,7 +57,7 @@
 }
 
 /* SideBar ke liye */
-.sidebar{
+/* .sidebar{
     position: fixed;
     margin-left: 12 px;
     top: 80px;
@@ -70,6 +70,21 @@
 .sidebar ul{
     margin-left: 12 px;
     margin-top: 20px;
+}
+//2 */
+.sidebar{
+    position: fixed;
+    margin-left: 12px;
+    top: 80px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background: #299;
+    overflow-x: hidden;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+    margin-left: 12px;
 }
 
 .sidebar ul li{
