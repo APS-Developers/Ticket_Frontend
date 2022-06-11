@@ -1,13 +1,23 @@
+body{
+    max-height:100vh;
+    max-width: 100vw;
+    overflow:hidden;
+}
 #aps_navbar{
-    position:absolute;
+    position:relative;
     z-index:1000;
     width:100%;
     background:#000A;
     text-align:right;
+    max-height:120px;
+}
+#aps_carousel{
+    position:relative;
+    top: -120px;
 }
 #aps_carousel .carousel-item img{
     width:100% !important;
-    height:100vh !important;
+    height:130vh !important;
     object-fit:cover;
 }
 #aps_carousel .carousel-caption{
