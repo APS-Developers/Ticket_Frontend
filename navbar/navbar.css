@@ -1,0 +1,19 @@
+body{
+    max-height:100vh;
+    max-width: 100vw;
+    overflow:hidden;
+}
+#aps_navbar{
+    position:relative;
+    z-index:1000;
+    width:100%;
+    background:#000A;
+    text-align:right;
+    max-height:120px;
+}
+
+@media (max-width: 500px) {
+    #aps_navbar .aps_btn-wrapper{
+        width:100%;
+    }
+}
