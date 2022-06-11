@@ -1,11 +1,22 @@
+#aps_navbar{
+    position:absolute;
+    z-index:1000;
+    width:100%;
+    background:#000A;
+    text-align:right;
+}
 #aps_carousel .carousel-item img{
     width:100% !important;
-    height:100% !important;
-    max-height:550px;
-    min-height:300px;
+    height:100vh !important;
+    object-fit:cover;
 }
 #aps_carousel .carousel-caption{
     background:#fffA;
     font-family: 'Playfair Display', serif;
     box-shadow: 3px 3px 5px 2px #000;
+}
+@media (max-width: 500px) {
+    #aps_navbar .aps_btn-wrapper{
+        width:100%;
+    }
 }
