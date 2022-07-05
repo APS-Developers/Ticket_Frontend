@@ -15,7 +15,6 @@
 
 #aps_content_wrapper {
   height: 92vh;
-  background-color: red;
   overflow: hidden;
   position: relative;
   align-items: stretch;
@@ -46,4 +45,8 @@
   margin: 0px;
   padding: 0px;
   opacity: 0;
+}
+#aps_content_wrapper #aps_main {
+  height: 92vh;
+  overflow-y: scroll;
 }/*# sourceMappingURL=style.css.map */

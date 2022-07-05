@@ -1,6 +1,6 @@
 $primary-col: #1e354e;
 $secondary-col: #f5f5f5;
-$sidebar-width: 300px;
+$sidebar-height: 92vh;
 
 #aps_navbar {
     background: $primary-col;
@@ -22,15 +22,14 @@ $sidebar-width: 300px;
 }
 
 #aps_content_wrapper{
-    height:92vh;
-    background-color: red;
+    height:$sidebar-height;
     overflow: hidden;
     position: relative;
     align-items: stretch;
     #aps_sidebar{
         background: $primary-col;
         color: $secondary-col;
-        min-height: 92vh;
+        min-height:$sidebar-height;
         position: relative;
         a{
             color:$secondary-col;
@@ -53,5 +52,9 @@ $sidebar-width: 300px;
         margin: 0px;
         padding: 0px;
         opacity:0;
+    }
+    #aps_main{
+        height: $sidebar-height;
+        overflow-y:scroll;
     }
 }
