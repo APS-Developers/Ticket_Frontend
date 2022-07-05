@@ -1,9 +1,10 @@
+const menubtn =  document.getElementById("aps_nav_menubtn");
 const sidebar = document.getElementById("aps_sidebar");
-const main = document.getElementById("aps_main_container");
-const shrink = (e) => {
-    console.log(main.style.marginLeft);
-    console.log(sidebar)
-    main.style.maginLeft=sidebar.getBoundingClientRect().width+"px";
-    console.log(main.style.marginLeft);
+menubtn.addEventListener("click",()=>{
+    sidebar.classList.toggle("active");
+})
+window.onload = function(){
+    if(window.innerWidth<=768){
+        sidebar.classList.toggle("active");
+    }
 }
-document.getElementById("menu_open").addEventListener("click",shrink);
