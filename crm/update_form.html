@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="aps_navbar">
+        <div class="container-fluid" id="title_bar_wrapper">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 align-self-stretch d-flex justify-content-between">
+                <a class="navbar-brand" id="aps_title" href="#">Management 360&deg;</a>
+                <button type="button" id="aps_nav_menubtn">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="aps_content_wrapper" class="container-fluid">
+        <div class="row align-self-stretch align-items-stretch">
+            <div id="aps_sidebar" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                <div id="aps_sidebar_items">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ticket Management <i
+                            class="bi bi-ticket-perforated-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inventory <i class="bi bi-box2-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Users <i class="bi bi-people-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Profile <i class="bi bi-person-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Logout <i class="bi bi-box-arrow-right aps_icons"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              
+            </div>
+            <div class="col" id="aps_main">
+                <!-- main -->
+                <div id="aps_crm">
+                    <div class="crm_header">
+                        <h4 class="crm_title">Update Ticket</h4>
+                        <h6 class="crm_subtitle">Modify the tickets</h6>
+                    </div>
+                    <div class="crm_form">
+                        <form action="" method="post">
+                            <fieldset>
+                                <label for="">Status</label>
+                                <select name="" id="" required>
+                                    <option value="">Status 1</option>
+                                    <option value="">Status 1</option>
+                                    <option value="">Status 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Category</label>
+                                <select name="" id="" required>
+                                    <option value="">Category 1</option>
+                                    <option value="">Category 1</option>
+                                    <option value="">Category 1</option>
+                                    <option value="">Category 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Sub Category</label>
+                                <select name="" id="" required>
+                                    <option value="">Sub Category 1</option>
+                                    <option value="">Sub Category 1</option>
+                                    <option value="">Sub Category 1</option>
+                                    <option value="">Sub Category 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Model</label>
+                                <select name="" id="" required>
+                                    <option value="">Model 1</option>
+                                    <option value="">Model 1</option>
+                                    <option value="">Model 1</option>
+                                    <option value="">Model 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Serial Number</label>
+                                <input type="text" name="" id="" required>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Priority</label>
+                                <select name="" id="" required>
+                                    <option value="">Priority 1</option>
+                                    <option value="">Priority 1</option>
+                                    <option value="">Priority 1</option>
+                                    <option value="">Priority 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Fault found code</label>
+                                <select name="" id="" required>
+                                    <option value="">Fault 1</option>
+                                    <option value="">Fault 1</option>
+                                    <option value="">Fault 1</option>
+                                    <option value="">Fault 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Resolution code</label>
+                                <select name="" id="" required>
+                                    <option value="">Resolution 1</option>
+                                    <option value="">Resolution 1</option>
+                                    <option value="">Resolution 1</option>
+                                    <option value="">Resolution 1</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Resolution Remarks</label>
+                                <textarea name="" id="" cols="30" rows="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Summary</label>
+                                <textarea name="" id="" cols="30" rows="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Online Resolvable</label>
+                                <select name="" id="" required>
+                                    <option value="">Yes</option>
+                                    <option value="">No</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
