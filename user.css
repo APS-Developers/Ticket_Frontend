@@ -1,0 +1,54 @@
+section{
+    /* max-height:100vh;
+    max-width: 100vw; */
+    /* overflow:; */
+    height : 100vh;
+    background-image: url(./img/registeruser.jpg); 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.card{
+
+    display: flex;
+    width: 100%;
+    max-width:600px;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+
+    border-top-color:rgba(255,255,255,0.5);
+    border-left-color:rgba(255,255,255,0.5);
+    border-bottom-color:rgba(255,255,255,0.5);
+    border-right-color:rgba(255,255,255,0.1);
+    background-color: rgba(22, 5, 5, 0.1);
+}
+
+.btn1 {
+
+   color: rgba(240, 10, 10, 0.1);
+
+
+}
+input{
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.1); 
+     color: (255,255,255,0.1);
+
+}
+
+
+@media (max-width: 600px) {
+    
+
+   
+
+}

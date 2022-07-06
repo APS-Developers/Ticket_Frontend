@@ -1,0 +1,71 @@
+/* body{
+    max-height:100vh;
+    max-width: 100vw;
+    overflow:hidden;
+    background-image: url(../images/signinbg2.jpg); 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+} */
+
+section{
+    height: 100vh;
+    background-image: url(../images/signinbg2.jpg); 
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+}
+
+.card{
+
+    width: 100%;
+    max-width:600px;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5);
+
+    border-top-color:rgba(255,255,255,0.5);
+    border-left-color:rgba(255,255,255,0.5);
+    border-bottom-color:rgba(255,255,255,0.5);
+    border-right-color:rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.1);
+}
+
+input{
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    /* box-shadow: 1.3rem 1.3rem 1.3rem rgba(0,0,0,0.5); */
+     /* color: (255,255,255,0.1); */
+
+}
+
+#aps_navbar{
+    position:relative;
+    z-index:1000;
+    width:100%;
+    background:#000A;
+    text-align:right;
+    max-height:120px;
+}
+
+/* #aps_navbar{
+    position:relative;
+    z-index:1000;
+    width:100%;
+    background:#000A;
+    text-align:right;
+    max-height:120px;
+} */
+@media (max-width: 600px) {
+    #aps_navbar .aps_btn-wrapper{
+        width:100%;
+    }
+
+   
+
+
+}
