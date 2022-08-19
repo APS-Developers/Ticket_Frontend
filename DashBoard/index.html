@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+
+    
+    <div class="container-xl p-5">
+        <div class="row justify-content-between align-items-center mb-5">
+            <div class="col flex-shrink-0 mb-5 mb-md-0">
+                <h1 class="display-4 mb-0">Dashboard</h1>
+                <div class="text-muted">Tickets overview &amp; summary</div>
+            </div>
+           
+        </div>
+        <!-- Colored status cards-->
+        <div class="row gx-5">
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-primary border-5">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">10</div>
+                                <div class="card-text">Open</div>
+                            </div>
+                            <i class="display-6 bi bi-envelope-open-fill"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-warning border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">12</div>
+                                <div class="card-text">Resolved</div>
+                            </div>
+                          
+                            <i class="display-6 bi bi-clipboard-check-fill"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-secondary border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">5</div>
+                                <div class="card-text">Pending</div>
+                            </div>
+                            <i class="display-6 bi bi-hourglass-split"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-info border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">7</div>
+                                <div class="card-text">Closed</div>
+                            </div>
+                            <i class="display-6 bi bi-envelope-check-fill"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <!-- Revenue breakdown chart example-->
+            <div class="col-lg-8 mb-5">
+                <div class="card card-raised h-100">
+                    <div class="card-header bg-transparent px-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-4">
+                                <h2 class="card-title mb-0">Line Chart heading </h2>
+                                <div class="card-subtitle">Monthly Status</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row gx-4">
+                           
+                            <div class="col-12 col-xxl-12"><canvas id="linechart" width="843" height="421" style="display: block; box-sizing: border-box; width: 675.188px; height: 337px;"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent position-relative ripple-gray mdc-ripple-upgraded">
+                        <a class="d-flex align-items-center justify-content-end text-decoration-none stretched-link text-primary" href="#!">
+                            <div class="fst-button">Open Report</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Segments pie chart example-->
+            <div class="col-lg-4 mb-5">
+                <div class="card card-raised h-100">
+                    <div class="card-header bg-transparent px-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-4">
+                                <h2 class="card-title mb-0">Pie Chart heading </h2>
+                                <div class="card-subtitle">Previous 6 months</div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex h-100 w-100 align-items-center justify-content-center">
+                            <div class="w-100" style="max-width: 20rem"><canvas id="piechart" width="400" height="400" style="display: block; box-sizing: border-box; width: 320px; height: 320px;"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent position-relative ripple-gray mdc-ripple-upgraded">
+                        <a class="d-flex align-items-center justify-content-end text-decoration-none stretched-link text-primary" href="#!">
+                            <div class="fst-button">Open Report</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Priority Cards  -->
+
+        <div class="row gx-5">
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-primary border-5">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">10</div>
+                                <div class="card-text">Priority-1</div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-warning border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">12</div>
+                                <div class="card-text">Priority-2</div>
+                            </div>
+                          
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-secondary border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">5</div>
+                                <div class="card-text">Priority-3</div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-6 mb-5">
+                <div class="card card-raised border-start border-info border-4">
+                    <div class="card-body px-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="me-2">
+                                <div class="display-5">7</div>
+                                <div class="card-text">Priority-4</div>
+                            </div>
+                        </div>
+
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row gx-5">
+            
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  
+    <script src="Chart/Chart1.js"></script>
+    <script src="Chart/Chart2.js"></script>
+</body>
+</html>
